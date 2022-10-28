@@ -1,9 +1,11 @@
 package jellis.grapemod;
 
+import jellis.grapemod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -24,8 +26,15 @@ public class Grapemod {
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static String MOD_ID = "grapemod";
 
     public Grapemod() {
+        //tells the game about the items I've made so far
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        modEventBus.addListener(this::setup);
+        ItemInit.ITEMS.register(modEventBus);
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
