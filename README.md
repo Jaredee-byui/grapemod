@@ -14,7 +14,7 @@ These are the sites I utilized the most heavily during the development of this p
 and I'd highly recommend them if you're looking into developing your own mod!
 * [Minecraft Forge Mod Documentation](https://docs.minecraftforge.net/en/1.19.x/)
 * [Modding Tutorials.org](https://moddingtutorials.org/o16/)
-* [Minecraft Wiki](https://minecraft.fandom.com/wiki/Tutorials/Creating_Forge_mods)
+* [Minecraft Wiki guide to forge modding](https://minecraft.fandom.com/wiki/Tutorials/Creating_Forge_mods)
 
 # Future Work
 
