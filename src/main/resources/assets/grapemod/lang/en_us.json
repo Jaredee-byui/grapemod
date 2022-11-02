@@ -2,6 +2,8 @@
     "itemGroup.grapemod": "Grape Mod Items",
 
     "item.grapemod.grape": "Grape",
-    "item.grapemod.lemon": "Lemon"
+    "item.grapemod.lemon": "Lemon",
+    "item.grapemod.grapeofwrath": "Grape of Wrath",
+    "item.grapemod.lemonade": "Lemonade"
     
 }
