@@ -14,25 +14,29 @@ public class ItemInit {
             DeferredRegister.create(ForgeRegistries.ITEMS, Grapemod.MOD_ID);
 
     public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().group(ModCreativeTab.instance)));
+
+    public static final RegistryObject<Item> GRAPEOFWRATH = ITEMS.register("grapeofwrath",
+            () -> new Item(new Item.Properties().group(ModCreativeTab.instance)));
 
     public static final RegistryObject<Item> LEMON = ITEMS.register("lemon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().group(ModCreativeTab.instance)));
+
+    public static final RegistryObject<Item> LEMONADE = ITEMS.register("lemonade",
+            () -> new Item(new Item.Properties().group(ModCreativeTab.instance)));
 
 
-    /*public static class ModCreativeTab extends ItemGroup {
-        private <string> ModCreativeTab(int index, string label){
+    public static class ModCreativeTab extends ItemGroup {
+        public static final ModCreativeTab instance = new ModCreativeTab(ItemGroup.GROUPS.length, "grapemod");
+        private <string> ModCreativeTab(int index, String label){
             super(index, label);
-        }
-
-        @Override
-        public ItemStack makeIcon(){
-            return new ItemStack(GRAPE.get());
         }
 
         @Override
         public ItemStack createIcon() {
             return new ItemStack(GRAPE.get());
         }
-    }*/
+
+    }
+
 }
