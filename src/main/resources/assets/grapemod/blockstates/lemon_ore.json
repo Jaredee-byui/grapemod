@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "grapemod:block/lemon_ore"
+        }
+    }
+}

@@ -1,5 +1,6 @@
 package jellis.grapemod;
 
+import jellis.grapemod.init.BlockInit;
 import jellis.grapemod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -34,6 +35,7 @@ public class Grapemod {
 
         modEventBus.addListener(this::setup);
         ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
 
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);

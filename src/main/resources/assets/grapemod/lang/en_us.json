@@ -4,6 +4,8 @@
     "item.grapemod.grape": "Grape",
     "item.grapemod.lemon": "Lemon",
     "item.grapemod.grapeofwrath": "Grape of Wrath",
-    "item.grapemod.lemonade": "Lemonade"
+    "item.grapemod.lemonade": "Lemonade",
+    "block.grapemod.grape_ore": "Grape Ore",
+    "block.grapemod.lemon_ore": "Lemon Ore"
     
 }
