@@ -1,8 +1,10 @@
-"ducksong": {
+{
+  "ducksong": {
     "sounds": [
-        {
-            "name": "grapemod:ducksong",
-            "stream": true
-        }
+      {
+        "name": "grapemod:grapedisc",
+        "stream": true
+      }
     ]
+  }
 }

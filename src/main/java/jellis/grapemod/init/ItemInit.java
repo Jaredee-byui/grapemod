@@ -37,7 +37,10 @@ public class ItemInit {
                             .effect(() -> new EffectInstance(Effects.SPEED, 200, 0), 0.5f)
                             .build())));
 
-    public static final RegistryObject<Item> GRAPEDISC = ITEMS.register("grapedisc", () -> new MusicDiscItem(1, () -> ModSoundEvents.ducksong.get(), new Item.Properties().maxStackSize(1).group(ModCreativeTab.instance)));
+    public static final RegistryObject<Item> GRAPEDISC = ITEMS.register("grapedisc",
+            () -> new MusicDiscItem(1, () -> ModSoundEvents.ducksong.get(), new Item.Properties()
+                    .maxStackSize(1)
+                    .group(ModCreativeTab.instance)));
 
 
     public static class ModCreativeTab extends ItemGroup {
