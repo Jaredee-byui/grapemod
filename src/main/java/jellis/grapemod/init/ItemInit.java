@@ -2,10 +2,8 @@ package jellis.grapemod.init;
 
 
 import jellis.grapemod.Grapemod;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import jellis.grapemod.util.ModSoundEvents;
+import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
@@ -38,6 +36,8 @@ public class ItemInit {
                             .effect(() -> new EffectInstance(Effects.HASTE, 200, 0), 0.5f)
                             .effect(() -> new EffectInstance(Effects.SPEED, 200, 0), 0.5f)
                             .build())));
+
+    public static final RegistryObject<Item> GRAPEDISC = ITEMS.register("grapedisc", () -> new MusicDiscItem(1, () -> ModSoundEvents.ducksong.get(), new Item.Properties().maxStackSize(1).group(ModCreativeTab.instance)));
 
 
     public static class ModCreativeTab extends ItemGroup {

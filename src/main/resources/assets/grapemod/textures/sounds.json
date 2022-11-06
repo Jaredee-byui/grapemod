@@ -1,0 +1,8 @@
+"ducksong": {
+    "sounds": [
+        {
+            "name": "grapemod:ducksong",
+            "stream": true
+        }
+    ]
+}
