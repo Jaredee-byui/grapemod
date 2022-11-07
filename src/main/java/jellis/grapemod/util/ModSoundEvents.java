@@ -14,8 +14,8 @@ public class ModSoundEvents {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Grapemod.MOD_ID);
 
 
-    public static final RegistryObject<SoundEvent> ducksong =
-            registerSoundEvent("ducksong");
+    public static final RegistryObject<SoundEvent> grapedisc =
+            registerSoundEvent("grapedisc");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Grapemod.MOD_ID, name)));
