@@ -4,6 +4,7 @@ mod for minecraft. The primary purpose of this exercise was to familiarize mysel
 more techincally sophisticated projects. 
 
 [Mod Demo Video One](https://youtu.be/IOLrcFCV3hc)
+[Mod Progress Update](https://youtu.be/DmwnZVnQkdA)
 
 This mod was developed for Minecraft Java Edition v1.16.5. It also utilizes forge version 32.2.39. 
 It was developed in IntelliJ studio. The MCP for the relevant version was also installed via IntelliJ.
@@ -20,8 +21,8 @@ and I'd highly recommend them if you're looking into developing your own mod!
 
 Currently the mod compiles and that's about it, for the next few weeks my main goals are as follows:
 * Item 1 - Finish implementing code base for new items
-* Item 2 - Complete sprite work
-* Item 3 - Finish debugging and ensure project compiles
+* Item 2 - Get music disc working
+* Item 3 - Figure out ore generation
 
 
 ## Authors:
