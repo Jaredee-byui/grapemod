@@ -38,9 +38,8 @@ public class ItemInit {
                             .build())));
 
     public static final RegistryObject<Item> GRAPEDISC = ITEMS.register("grapedisc",
-            () -> new MusicDiscItem(1, () -> ModSoundEvents.grapedisc.get(), new Item.Properties()
-                    .maxStackSize(1)
-                    .group(ModCreativeTab.instance)));
+            () -> new MusicDiscItem(1, () -> ModSoundEvents.grapedisc.get(),
+                    new Item.Properties().maxStackSize(1).group(ModCreativeTab.instance)));
 
 
     public static class ModCreativeTab extends ItemGroup {
